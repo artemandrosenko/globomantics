@@ -25,9 +25,11 @@ const HouseList = () => {
             </div>
             <table className="table table-hover">
                 <thead>
-                    <td>Address</td>
-                    <td>Country</td>
-                    <td>Asking Price</td>
+                    <tr>
+                        <td>Address</td>
+                        <td>Country</td>
+                        <td>Asking Price</td>
+                    </tr>
                 </thead>
                 <tbody>
                     {houses.map(h => <HouseRow key={h.id} house={h} />)}
